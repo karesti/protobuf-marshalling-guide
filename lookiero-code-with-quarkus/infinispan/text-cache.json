@@ -1,0 +1,14 @@
+{
+  "distributed-cache": {
+    "mode": "SYNC",
+    "encoding": {
+      "key": {
+        "media-type": "text/plain"
+      },
+      "value": {
+        "media-type": "text/plain"
+      }
+    },
+    "statistics": true
+  }
+}

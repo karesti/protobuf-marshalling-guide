@@ -1,0 +1,4 @@
+.idea
+infinispan-run
+target
+node_modules
