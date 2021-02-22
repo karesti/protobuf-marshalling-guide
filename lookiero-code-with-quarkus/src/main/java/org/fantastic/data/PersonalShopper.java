@@ -3,11 +3,10 @@ package org.fantastic.data;
 import org.infinispan.protostream.annotations.ProtoFactory;
 import org.infinispan.protostream.annotations.ProtoField;
 
-import java.io.Serializable;
 import java.util.Objects;
 import java.util.UUID;
 
-public class PersonalShopper implements Serializable {
+public class PersonalShopper {
    private UUID id;
    private String name;
    private City city;
@@ -17,6 +16,10 @@ public class PersonalShopper implements Serializable {
       this.id = id;
       this.name = name;
       this.city = city;
+   }
+
+   public static PersonalShopper create(String name, City city) {
+      return new PersonalShopper(UUID.randomUUID(), name, city);
    }
 
    @ProtoField(number = 1)

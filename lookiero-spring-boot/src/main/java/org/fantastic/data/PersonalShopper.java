@@ -1,4 +1,4 @@
-package org.fantastic;
+package org.fantastic.data;
 
 import java.io.Serializable;
 import java.util.Objects;

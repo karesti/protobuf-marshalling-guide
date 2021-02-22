@@ -1,11 +1,18 @@
-package org.fantastic;
+package org.fantastic.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public final class Data {
    public static final String PERSONAL_SHOPPER_NAMES_JAVA ="java-personal-shoppers";
    public static final String PERSONAL_SHOPPER_NAMES_JSON ="text-personal-shoppers";
+   private static Random random = new Random();
+
+   public static PersonalShopper getRandomPersonalShopper() {
+      int id = random.nextInt(Data.SHOPPERS.size());
+      return SHOPPERS.get(id);
+   }
 
    public static final List<PersonalShopper> SHOPPERS = Arrays.asList(
          PersonalShopper.create("Aitor"),

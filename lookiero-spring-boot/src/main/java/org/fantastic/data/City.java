@@ -1,4 +1,4 @@
-package org.fantastic;
+package org.fantastic.data;
 
 public enum City {
    PARIS,
