@@ -1,3 +1,3 @@
 # Understanding Protobuf Caches
 
-Repo private until publication of article 
+This project is the base source code for the Protobuf Guide
