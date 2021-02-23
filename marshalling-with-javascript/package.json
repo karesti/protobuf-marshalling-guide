@@ -1,0 +1,11 @@
+{
+  "name": "marshalling-with-js",
+  "version": "0.0.1",
+  "description": "Marshalling example tutorial",
+  "main": "index.js",
+  "author": "Katia Aresti",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "infinispan": "^0.7.0"
+  }
+}

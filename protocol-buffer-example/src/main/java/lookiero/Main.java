@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         People.PersonalShopper shopper1 = People.PersonalShopper.newBuilder().setId(UUID.randomUUID().toString())
-              .setCity("BILBAO").setName("Oihanno").build();
+              .setCity("BILBAO").setName("Oihana").build();
 
         FileOutputStream output = new FileOutputStream("people.txt");
         shopper1.writeTo(output);
