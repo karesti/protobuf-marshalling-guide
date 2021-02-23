@@ -2,3 +2,4 @@
 infinispan-run
 target
 node_modules
+*.iml
