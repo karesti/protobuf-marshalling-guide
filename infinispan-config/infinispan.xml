@@ -7,6 +7,11 @@
 
    <cache-container name="default" statistics="true">
       <transport cluster="${infinispan.cluster.name:cluster}" stack="${infinispan.cluster.stack:tcp}" node-name="${infinispan.node.name:}"/>
+      <serialization marshaller="org.infinispan.commons.marshall.JavaSerializationMarshaller">
+         <allow-list>
+            <regex>.*</regex>
+         </allow-list>
+      </serialization>
       <distributed-cache name="java-personal-shoppers" statistics="true">
       </distributed-cache>
       <distributed-cache name="text-personal-shoppers" statistics="true">
@@ -19,6 +24,12 @@
          <encoding>
             <key media-type="application/x-java-object"/>
             <value media-type="application/x-protostream"/>
+         </encoding>
+      </distributed-cache>
+      <distributed-cache name="pojo-personal-shoppers" statistics="true">
+         <encoding>
+            <key media-type="application/x-java-object"/>
+            <value media-type="application/x-java-object"/>
          </encoding>
       </distributed-cache>
    </cache-container>
