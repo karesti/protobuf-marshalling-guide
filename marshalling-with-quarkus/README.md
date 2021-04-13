@@ -4,12 +4,12 @@
 ## Example Query
  
 ```text
-FROM lookiero.PersonalShopper 
+FROM mycompany.PersonalShopper 
 
-FROM lookiero.PersonalShopper WHERE city='BILBAO'
+FROM mycompany.PersonalShopper WHERE city='BILBAO'
 
-SELECT p.name FROM lookiero.PersonalShopper p where p.city='PARIS'
+SELECT p.name FROM mycompany.PersonalShopper p where p.city='PARIS'
 
-SELECT COUNT(p.city) FROM lookiero.PersonalShopper p WHERE p.city='BILBAO'
+SELECT COUNT(p.city) FROM mycompany.PersonalShopper p WHERE p.city='BILBAO'
 ```
 

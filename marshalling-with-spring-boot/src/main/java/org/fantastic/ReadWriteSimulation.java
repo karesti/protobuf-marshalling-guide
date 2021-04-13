@@ -3,10 +3,10 @@ package org.fantastic;
 import org.fantastic.data.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import javax.inject.Inject;
 import java.lang.invoke.MethodHandles;
 
 @Component
@@ -16,7 +16,7 @@ public class ReadWriteSimulation {
 
    private final PersonalShoppersRepository repository;
 
-   @Inject
+   @Autowired
    public ReadWriteSimulation(PersonalShoppersRepository repository) {
       this.repository = repository;
    }
