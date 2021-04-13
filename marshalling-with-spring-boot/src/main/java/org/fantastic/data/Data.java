@@ -6,7 +6,6 @@ import java.util.Random;
 
 public final class Data {
    public static final String PERSONAL_SHOPPER_NAMES_JAVA ="java-personal-shoppers";
-   public static final String PERSONAL_SHOPPER_NAMES_JSON ="text-personal-shoppers";
    private static Random random = new Random();
 
    public static PersonalShopper getRandomPersonalShopper() {
